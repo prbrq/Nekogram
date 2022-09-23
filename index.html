@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login • Nekogram</title>
+    <link rel="icon" type="image/x-icon" href="Nekogram.ico">
+    <style>
+            body {
+                background-color:rgba(216, 191, 216, 0.3);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 12px;
+            }
+            .thirdFrame {
+                position: absolute;
+                width: 350px;
+                height: 5%;
+                left: calc(50% - 205px);
+                top: 637px;
+                padding: 30px;
+            }
+            .secondFrame {
+                position: absolute;
+                background-color: white;
+                width: 350px;
+                height: 2%;
+                left: calc(50% - 205px);
+                top: 550px;
+                border:1px solid;
+                border-color:lightgray;
+                padding: 30px;
+            }
+            .mainFrame {
+                position: absolute;
+                background-color: white;
+                width: 350px;
+                height: 45%;
+                left: calc(50% - 205px);
+                top: 50px;
+                border:1px solid;
+                border-color:lightgray;
+                padding: 30px;
+            }
+            .mainFrame img {
+                position: relative;
+                top: 40px;
+                left: calc(50% - 86px);
+            }
+            .mainFrame input {
+                position: relative;
+                top: 60px;
+                width: 100%;
+                padding: 10px;
+                margin: 0 0 20px 0;
+                border-radius: 5px;
+                border: 1px solid lightgray;
+                box-sizing: border-box;
+                background-color: whitesmoke;
+            }
+            .mainFrame span {
+                position: relative;
+                top: 15%;
+                padding: 0 0 40px 0;
+            }
+            footer {
+                position:absolute;
+                bottom:0;
+                width:99%;
+                height:10%;
+                text-align: center;
+            }
+            .footerLinksList {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                display: inline-block;
+                text-align: left;
+            }
+            .footerLinksList li {
+                float: left;
+            }
+            .footerLinksList li a, select, span {
+                display: block;
+                color: gray;
+                text-align: center;
+                padding: 5px 15px;
+            }
+            .footerLinksList li select {
+                text-align: center;
+                background-color: transparent;
+                border: 0px;
+            }
+            .footerLinksList li a:link{
+                text-decoration: none;
+            }
+            .catbook {
+                text-decoration: none;
+                color:royalblue;
+                font-weight: bold;
+                font-size: 13px;
+            }
+            .password {
+                text-decoration: none;
+                color:royalblue;
+            }
+            .secondFrame span{
+                position: relative;
+                top: 0%;
+                padding: 0;
+                color: black;
+                font-size: 13px;
+            }
+            .markets{
+                display: inline-block;
+                padding: 16px;
+                width: 40%;
+                height: auto;
+            }
+    </style>
+</head>
+<body>
+    <div class="mainFrame">
+        <img src="logo.png" alt="logo">
+        <form action="#nothing">
+            <input type="text" id="uname" name="username" placeholder="Username">
+            <input type="password" id="pword" name="password" placeholder="Password">
+            <input style="background-color:cornflowerblue;" type="submit" value="Log In">
+        </form>
+        <span style="font-weight:bold;">OR</span>
+        <span><a href="#Catbook" class="catbook">Log in with Catbook</a></span>
+        <span><a href="#ForgotPassword" class="password">Forgot password?</a></span>
+    </div>
+    <div class="secondFrame">
+        <span>Don't have an account? <a href="#SignUp" style="text-decoration: none; font-weight: bold; color:cornflowerblue;">Sign up</a></span>
+    </div>
+    <div class="thirdFrame">
+        <span style="color:black; font-size:13px;">Get the app.</span>
+        <a href="#Apple"><img src="apple.png" alt="Apple" class="markets"></a>
+        <a href="#Android"><img src="android.png" alt="Android" class="markets"></a>
+    </div>
+    <footer>
+        <ul class="footerLinksList">
+            <li><a href="#About">About</a></li>
+            <li><a href="#Help">Help</a></li>
+            <li><a href="#API">API</a></li>
+            <li><a href="#Terms">Terms</a></li>
+        </ul>
+        <br>
+        <ul class="footerLinksList">
+            <li>
+                <select id="language" name="language">
+                    <option value="af">Afrikaans</option>
+                    <option value="cs">Čeština</option>
+                    <option value="da">Dansk</option>
+                    <option value="de">Deutsch</option>
+                    <option value="el">Ελληνικά</option>
+                    <option value="en" selected>English</option>
+                    <option value="en-gb">English (UK)</option>
+                    <option value="es">Español (España)</option>
+                    <option value="es-la">Español</option>
+                    <option value="fi">Suomi</option>
+                    <option value="fr">Français</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="it">Italiano</option>
+                    <option value="ja">日本語</option>
+                    <option value="ko">한국어</option>
+                    <option value="ms">Bahasa Melayu</option>
+                    <option value="nb">Norsk</option>
+                    <option value="nl">Nederlands</option>
+                    <option value="pl">Polski</option>
+                    <option value="pt-br">Português (Brasil)</option>
+                    <option value="pt">Português (Portugal)</option>
+                    <option value="ru">Русский</option>
+                    <option value="sv">Svenska</option>
+                    <option value="th">ภาษาไทย</option>
+                    <option value="tl">Filipino</option>
+                    <option value="tr">Türkçe</option>
+                    <option value="zh-cn">中文(简体)</option>
+                    <option value="zh-tw">中文(台灣)</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="hi">हिन्दी</option>
+                    <option value="hr">Hrvatski</option>
+                    <option value="hu">Magyar</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                    <option value="ml">മലയാളം</option>
+                    <option value="mr">मराठी</option>
+                    <option value="ne">नेपाली</option>
+                    <option value="pa">ਪੰਜਾਬੀ</option>
+                    <option value="si">සිංහල</option>
+                    <option value="sk">Slovenčina</option>
+                    <option value="ta">தமிழ்</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="zh-hk">中文(香港)</option>
+                    <option value="bg">Български</option>
+                    <option value="fr-ca">Français (Canada)</option>
+                    <option value="ro">Română</option>
+                    <option value="sr">Српски</option>
+                    <option value="uk">Українська</option>
+                </select>
+            </li>
+            <li><span>© 2022 Nekogram from Prbrq</span></li>
+        </ul>
+    </footer>
+</body>
+</html>
